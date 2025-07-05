@@ -1,0 +1,16 @@
+[
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Brochetas de aceituna y pimiento",
+    "imagen": "brochetas-aceituna-pimiento.jpg",
+    "ingredientes": ["Aceitunas verdes y negras","Pimiento rojo troceado","Hojas de albahaca"],
+    "pasos": ["Ensarta en palitos aceituna, pimiento y albahaca.","Aliña con aceite de oliva y pimienta.","Sirve frío o a temperatura ambiente."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Garbanzos crujientes al horno",
+    "imagen": "garbanzos-crujientes.jpg",
+    "ingredientes": ["200 g garbanzos cocidos","1 cda. AOVE","½ cdita pimentón ahumado","¼ cdita comino"],
+    "pasos": ["Mezcla garbanzos con aceite y especias.","Hornea 35 min a 180 °C hasta dorados.","Deja enfriar y sirve."]
+  }
+]
