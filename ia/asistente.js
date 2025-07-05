@@ -16,13 +16,12 @@ toggle.addEventListener('click', () => {
         log.innerHTML += '<div><strong>Tú:</strong> ' + q + '</div>';
         e.target.value = '';
         setTimeout(() => {
-          // Respuestas simples de ejemplo
-          if (q.toLowerCase().includes('ingredientes')) {
-            log.innerHTML += '<div><strong>IA:</strong> Puedes ver los ingredientes debajo de cada receta 😊</div>';
+          if (q.toLowerCase().includes('ingrediente')) {
+            log.innerHTML += '<div><strong>IA:</strong> Cada receta tiene su lista, baja hasta ver "Ingredientes".</div>';
           } else if (q.toLowerCase().includes('tiempo')) {
-            log.innerHTML += '<div><strong>IA:</strong> El tiempo de preparación varía, revisa cada receta individual.</div>';
+            log.innerHTML += '<div><strong>IA:</strong> El tiempo cambia por receta; mira qué ingredientes y pasos hay.</div>';
           } else {
-            log.innerHTML += '<div><strong>IA:</strong> ¡Esa es una gran pregunta! Estoy aprendiendo…</div>';
+            log.innerHTML += '<div><strong>IA:</strong> Lo siento, estoy aprendiendo… 🤖</div>';
           }
         }, 500);
       }
@@ -30,4 +29,3 @@ toggle.addEventListener('click', () => {
     window.Chatbot = true;
   }
 });
-
