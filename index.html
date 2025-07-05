@@ -7,17 +7,16 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; }
     header { text-align: center; padding: 20px; background: #28a745; color: white; }
-    .filtros { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; padding: 10px; }
-    .filtros button { padding: 8px 12px; border: none; border-radius: 5px; cursor: pointer; }
-    .buscador { text-align: center; margin: 10px 0; }
-    .buscador input { width: 60%; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
-    .grid-recetas { display: grid; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); gap: 20px; padding: 20px; }
+    .buscador { text-align: center; margin: 15px; }
+    .buscador input { width: 60%; padding: 8px; border-radius: 5px; border: 1px solid #ccc; }
+    .filtros { text-align: center; margin-bottom: 20px; }
+    .filtros button { margin: 0 5px; padding: 8px 12px; background: #ddd; border: none; border-radius: 5px; cursor: pointer; }
+    .grid-recetas { display: grid; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); gap: 20px; padding: 0 20px 20px; }
     .receta { background: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .receta h3 { margin: 0 0 10px; color: #28a745; }
+    .receta h3 { margin: 0 0 10px; color: #28a745; font-size: 1em; }
     .receta img { width: 100%; border-radius: 5px; }
-    .receta ul { padding-left: 20px; }
-    .receta li { margin-bottom: 4px; }
-    .receta button { margin-top: 10px; background: #28a745; color: white; border: none; padding: 6px 10px; border-radius: 5px; cursor: pointer; }
+    .receta ul, .receta ol { padding-left: 20px; font-size: 0.9em;}
+    .receta button { margin-top: 10px; padding: 6px 10px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -25,87 +24,98 @@
     <h1>Recetario Delicioso</h1>
     <p>40 recetas para inspirar tu cocina.</p>
   </header>
+
   <div class="buscador">
     <input type="search" id="searchInput" placeholder="Buscar por nombre o ingrediente...">
   </div>
   <div class="filtros">
     <button data-cat="Todas">Todas</button>
-    <button data-cat="Favoritas">Favoritas</button>
     <button data-cat="Aperitivos">Aperitivos</button>
     <button data-cat="Primeros">Primeros</button>
     <button data-cat="Segundos">Segundos</button>
     <button data-cat="Postres">Postres</button>
   </div>
+
   <section class="grid-recetas">Cargando recetas...</section>
-  
+
   <script>
-    let todasRecetas = [];
+    let recetas = [];
     document.getElementById('searchInput').addEventListener('input', filtrar);
-    document.querySelectorAll('.filtros button').forEach(b => b.addEventListener('click', filtrar));
-    
+    document.querySelectorAll('.filtros button').forEach(b => b.addEventListener('click', () => {
+      document.querySelectorAll('.filtros button').forEach(x=>x.style.background='#ddd');
+      b.style.background = '#28a745';
+      filtrar();
+    }));
+
     async function loadRecetas() {
+      console.log('🔄 Cargando recetas...');
       const cats = ['Seafood','Chicken','Beef','Dessert'];
       let list = [];
       for (let cat of cats) {
-        const d = await (await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${cat}`)).json();
-        list = list.concat(d.meals.slice(0,10).map(m => ({...m, category: cat})));
+        const resp = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${cat}`);
+        const data = await resp.json();
+        list = list.concat(data.meals.slice(0,10).map(m => ({ ...m, category: cat })));
       }
-      todasRecetas = await Promise.all(list.map(async m => {
+      recetas = await Promise.all(list.map(async m => {
         const info = await (await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${m.idMeal}`)).json();
         const r = info.meals[0];
         return {
           id: m.idMeal,
           name: traducir(r.strMeal),
-          img: r.strMealThumb,
           category: m.category,
-          ingredients: Array.from({length:20},(_,i)=> r[`strIngredient${i+1}`] ? traducir(r[`strIngredient${i+1}`]) + ' ' + traducir(r[`strMeasure${i+1}`]) : null)
-                          .filter(x=>x),
-          steps: r.strInstructions.split('. ').filter(x=>x).map(x=>traducir(x.trim()+'.'))
+          img: r.strMealThumb,
+          ingredients: Array.from({length:20}, (_,i)=>r[`strIngredient${i+1}`] ? traducir(r[`strIngredient${i+1}`])+' '+traducir(r[`strMeasure${i+1}`]) : null).filter(x=>x),
+          steps: r.strInstructions.split('. ').filter(x=>x).map(x => traducir(x.trim()+'.'))
         };
       }));
-      render(todasRecetas);
+      console.log('🎉 Recetas listas:', recetas.length);
+      render(recetas);
     }
-    
+
     function render(arr) {
-      const html = arr.map(r=>`
+      const html = arr.map(r => `
         <article class="receta">
           <h3>${r.name}</h3>
-          <img src="${r.img}" alt="">
+          <img src="${r.img}">
           <ul>${r.ingredients.map(i=>`<li>${i}</li>`).join('')}</ul>
           <ol>${r.steps.map((s,i)=>`<li${i?' style="display:none"':''}>Paso ${i+1}: ${s}</li>`).join('')}</ol>
           <button onclick="mostrarPaso(this)">Siguiente paso</button>
         </article>`).join('');
       document.querySelector('.grid-recetas').innerHTML = html || 'No hay recetas.';
     }
-    
+
     function filtrar() {
       const q = document.getElementById('searchInput').value.toLowerCase();
-      const cat = document.querySelector('.filtros button.selected')?.getAttribute('data-cat') || 'Todas';
-      const out = todasRecetas.filter(r=>{
-        const enCat = cat==='Todas' || (cat==='Favoritas'? true : traducirCat(r.category)===cat);
-        const enBusq = r.name.toLowerCase().includes(q) || r.ingredients.some(i=>i.toLowerCase().includes(q));
-        return enCat && enBusq;
+      const cat = document.querySelector('.filtros button[style*="28a745"]')?.getAttribute('data-cat') || 'Todas';
+      const out = recetas.filter(r => {
+        const matchCat = cat === 'Todas' || traducirCat(r.category) === cat;
+        const matchQ = r.name.toLowerCase().includes(q) || r.ingredients.some(i => i.toLowerCase().includes(q));
+        return matchCat && matchQ;
       });
       render(out);
     }
-    
+
     function traducir(text) {
       const m = {'Preheat':'Precalienta','Mix':'Mezcla','Cook':'Cocina','Serve':'Sirve','and':'y','with':'con','in':'en','Add':'Añade','Heat':'Calienta','Salt':'Sal','Pepper':'Pimienta','Oil':'Aceite','Chicken':'Pollo','Beef':'Carne','Seafood':'Mariscos','Dessert':'Postre'};
       return text.replace(new RegExp(Object.keys(m).join('|'),'gi'), w => m[w]);
     }
-    
+
+    function traducirCat(cat) {
+      return { 'Seafood':'Aperitivos', 'Chicken':'Primeros', 'Beef':'Segundos', 'Dessert':'Postres' }[cat] || 'Todas';
+    }
+
     function mostrarPaso(btn) {
-      const pasos = btn.previousElementSibling.querySelectorAll('li');
-      for (let i=0;i<pasos.length;i++){
-        if (pasos[i].style.display===''){
-          pasos[i].style.display='none';
-          if (i+1<pasos.length) pasos[i+1].style.display='';
+      const lis = btn.previousElementSibling.querySelectorAll('li');
+      for (let i=0;i<lis.length;i++){
+        if (lis[i].style.display===''){
+          lis[i].style.display='none';
+          if (i+1<lis.length) lis[i+1].style.display='';
           else btn.remove();
           break;
         }
       }
     }
-    
+
     loadRecetas();
   </script>
 </body>
