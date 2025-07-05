@@ -1,126 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recetario Delicioso</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recetas FitCocina</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; }
-    header { text-align: center; padding: 20px; background: #28a745; color: white; }
-    .buscador { text-align: center; margin: 15px; }
-    .buscador input { width: 60%; padding: 8px; border-radius: 5px; border: 1px solid #ccc; }
-    .filtros { text-align: center; margin-bottom: 20px; }
-    .filtros button { margin: 0 5px; padding: 8px 12px; background: #ddd; border: none; border-radius: 5px; cursor: pointer; }
-    .grid-recetas { display: grid; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); gap: 20px; padding: 0 20px 20px; }
-    .receta { background: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .receta h3 { margin: 0 0 10px; color: #28a745; font-size: 1em; }
-    .receta img { width: 100%; border-radius: 5px; }
-    .receta ul, .receta ol { padding-left: 20px; font-size: 0.9em;}
-    .receta button { margin-top: 10px; padding: 6px 10px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    body { font-family: sans-serif; padding: 1rem; background: #f9f9f9; }
+    h1, h2 { color: #2c3e50; }
+    .receta { background: white; border-radius: 1rem; padding: 1rem; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .receta img { width: 100%; border-radius: 0.5rem; max-height: 300px; object-fit: cover; }
+    .ingredientes, .preparacion { margin: 0.5rem 0; }
+    .categoria { background: #27ae60; color: white; padding: 0.2rem 0.5rem; border-radius: 0.3rem; display: inline-block; font-size: 0.9rem; margin-bottom: 0.5rem; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Recetario Delicioso</h1>
-    <p>40 recetas para inspirar tu cocina.</p>
-  </header>
+  <h1>Recetas FitCocina</h1>
 
-  <div class="buscador">
-    <input type="search" id="searchInput" placeholder="Buscar por nombre o ingrediente...">
+  <!-- RECETA 1 -->
+  <div class="receta">
+    <div class="categoria">Aperitivo</div>
+    <h2>Brochetas de aceituna y pimiento</h2>
+    <img src="public/images/brochetas-aceituna-pimiento.jpg" alt="Brochetas de aceituna y pimiento">
+    <div class="ingredientes">
+      <strong>Ingredientes:</strong>
+      <ul>
+        <li>Aceitunas verdes y negras</li>
+        <li>Pimiento rojo troceado</li>
+        <li>Hojas de albahaca</li>
+      </ul>
+    </div>
+    <div class="preparacion">
+      <strong>Preparación:</strong>
+      <ol>
+        <li>Ensarta en palitos aceituna, pimiento y albahaca.</li>
+        <li>Aliña con aceite de oliva y pimienta.</li>
+        <li>Sirve frío o a temperatura ambiente.</li>
+      </ol>
+    </div>
   </div>
-  <div class="filtros">
-    <button data-cat="Todas">Todas</button>
-    <button data-cat="Aperitivos">Aperitivos</button>
-    <button data-cat="Primeros">Primeros</button>
-    <button data-cat="Segundos">Segundos</button>
-    <button data-cat="Postres">Postres</button>
+
+  <!-- RECETA 2 -->
+  <div class="receta">
+    <div class="categoria">Aperitivo</div>
+    <h2>Garbanzos crujientes al horno</h2>
+    <img src="public/images/garbanzos-crujientes.jpg" alt="Garbanzos crujientes al horno">
+    <div class="ingredientes">
+      <strong>Ingredientes:</strong>
+      <ul>
+        <li>200 g garbanzos cocidos</li>
+        <li>1 cda. AOVE</li>
+        <li>½ cdita pimentón ahumado</li>
+        <li>¼ cdita comino</li>
+      </ul>
+    </div>
+    <div class="preparacion">
+      <strong>Preparación:</strong>
+      <ol>
+        <li>Mezcla garbanzos con aceite y especias.</li>
+        <li>Hornea 35 min a 180 °C hasta dorados.</li>
+        <li>Deja enfriar y sirve.</li>
+      </ol>
+    </div>
   </div>
 
-  <section class="grid-recetas">Cargando recetas...</section>
+  <!-- RECETA 3 -->
+  <div class="receta">
+    <div class="categoria">Aperitivo</div>
+    <h2>Huevos rellenos de crema de aguacate</h2>
+    <img src="public/images/huevos-aguacate.jpg" alt="Huevos rellenos de crema de aguacate">
+    <div class="ingredientes">
+      <strong>Ingredientes:</strong>
+      <ul>
+        <li>4 huevos duros</li>
+        <li>1 aguacate</li>
+        <li>1 cda. AOVE</li>
+        <li>Limón y sal al gusto</li>
+      </ul>
+    </div>
+    <div class="preparacion">
+      <strong>Preparación:</strong>
+      <ol>
+        <li>Parte huevos, retira yemas.</li>
+        <li>Tritura yema + aguacate + aceite + limón.</li>
+        <li>Rellena claras justo antes de servir.</li>
+      </ol>
+    </div>
+  </div>
 
-  <script>
-    let recetas = [];
-    document.getElementById('searchInput').addEventListener('input', filtrar);
-    document.querySelectorAll('.filtros button').forEach(b => b.addEventListener('click', () => {
-      document.querySelectorAll('.filtros button').forEach(x=>x.style.background='#ddd');
-      b.style.background = '#28a745';
-      filtrar();
-    }));
+  <!-- RECETA 4 -->
+  <div class="receta">
+    <div class="categoria">Aperitivo</div>
+    <h2>Chips de zanahoria</h2>
+    <img src="public/images/chips-zanahoria.jpg" alt="Chips de zanahoria">
+    <div class="ingredientes">
+      <strong>Ingredientes:</strong>
+      <ul>
+        <li>2 zanahorias</li>
+        <li>1 cdita aceite de coco o AOVE</li>
+        <li>Sal al gusto</li>
+      </ul>
+    </div>
+    <div class="preparacion">
+      <strong>Preparación:</strong>
+      <ol>
+        <li>Corta rodajas finas y mezcla con aceite.</li>
+        <li>Hornea o air‑fry a 180 °C durante 15‑20 min.</li>
+        <li>Sirve con hummus o guacamole.</li>
+      </ol>
+    </div>
+  </div>
 
-    async function loadRecetas() {
-      console.log('🔄 Cargando recetas...');
-      const cats = ['Seafood','Chicken','Beef','Dessert'];
-      let list = [];
-      for (let cat of cats) {
-        const resp = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${cat}`);
-        const data = await resp.json();
-        list = list.concat(data.meals.slice(0,10).map(m => ({ ...m, category: cat })));
-      }
-      recetas = await Promise.all(list.map(async m => {
-        const info = await (await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${m.idMeal}`)).json();
-        const r = info.meals[0];
-        return {
-          id: m.idMeal,
-          function traducir(text) {
-  const m = {
-    'Preheat':'Precalienta','Mix':'Mezcla','Cook':'Cocina','Serve':'Sirve','and':'y','with':'con',
-    'in':'en','Add':'Añade','Heat':'Calienta','Salt':'Sal','Pepper':'Pimienta','Oil':'Aceite',
-    'Chicken':'Pollo','Beef':'Carne de res','Seafood':'Mariscos','Dessert':'Postre',
-    'medium':'mediano','cup':'taza','tbsp':'cda','tsp':'cdita','g':'g','lb':'libra',
-    'slice':'rebanada','slices':'rebanadas','fillet':'filete','fillets':'filetes',
-    'sprig':'ramita','sprigs':'ramitas','clove':'diente','cloves':'dientes',
-    'can':'lata','large':'grande','small':'pequeño','chopped':'picado','diced':'cortado',
-    'minced':'picado fino','pieces':'piezas','jar':'frasco','bunch':'manojo'
-  };
-  return text.replace(new RegExp(Object.keys(m).join('|'),'gi'), w => m[w]);
-}
+  <!-- RECETA 5 -->
+  <div class="receta">
+    <div class="categoria">Aperitivo</div>
+    <h2>Patés vegetales con crudités</h2>
+    <img src="public/images/pates-vegetales.jpg" alt="Patés vegetales con crudités">
+    <div class="ingredientes">
+      <strong>Ingredientes:</strong>
+      <ul>
+        <li>Hummus, muhammara o mutabal</li>
+        <li>Palitos de zanahoria, apio o pan integral</li>
+      </ul>
+    </div>
+    <div class="preparacion">
+      <strong>Preparación:</strong>
+      <ol>
+        <li>Coloca los patés en cuencos pequeños.</li>
+        <li>Acompaña con verduras o pan integral.</li>
+      </ol>
+    </div>
+  </div>
 
-
-    function render(arr) {
-      const html = arr.map(r => `
-        <article class="receta">
-          <h3>${r.name}</h3>
-          <img src="${r.img}">
-          <ul>${r.ingredients.map(i=>`<li>${i}</li>`).join('')}</ul>
-          <ol>${r.steps.map((s,i)=>`<li${i?' style="display:none"':''}>Paso ${i+1}: ${s}</li>`).join('')}</ol>
-          <button onclick="mostrarPaso(this)">Siguiente paso</button>
-        </article>`).join('');
-      document.querySelector('.grid-recetas').innerHTML = html || 'No hay recetas.';
-    }
-
-    function filtrar() {
-      const q = document.getElementById('searchInput').value.toLowerCase();
-      const cat = document.querySelector('.filtros button[style*="28a745"]')?.getAttribute('data-cat') || 'Todas';
-      const out = recetas.filter(r => {
-        const matchCat = cat === 'Todas' || traducirCat(r.category) === cat;
-        const matchQ = r.name.toLowerCase().includes(q) || r.ingredients.some(i => i.toLowerCase().includes(q));
-        return matchCat && matchQ;
-      });
-      render(out);
-    }
-
-    function traducir(text) {
-      const m = {'Preheat':'Precalienta','Mix':'Mezcla','Cook':'Cocina','Serve':'Sirve','and':'y','with':'con','in':'en','Add':'Añade','Heat':'Calienta','Salt':'Sal','Pepper':'Pimienta','Oil':'Aceite','Chicken':'Pollo','Beef':'Carne','Seafood':'Mariscos','Dessert':'Postre'};
-      return text.replace(new RegExp(Object.keys(m).join('|'),'gi'), w => m[w]);
-    }
-
-    function traducirCat(cat) {
-      return { 'Seafood':'Aperitivos', 'Chicken':'Primeros', 'Beef':'Segundos', 'Dessert':'Postres' }[cat] || 'Todas';
-    }
-
-    function mostrarPaso(btn) {
-      const lis = btn.previousElementSibling.querySelectorAll('li');
-      for (let i=0;i<lis.length;i++){
-        if (lis[i].style.display===''){
-          lis[i].style.display='none';
-          if (i+1<lis.length) lis[i+1].style.display='';
-          else btn.remove();
-          break;
-        }
-      }
-    }
-
-    loadRecetas();
-  </script>
 </body>
 </html>
