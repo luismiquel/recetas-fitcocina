@@ -1,135 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Recetas FitCocina</title>
-  <style>
-    body { font-family: sans-serif; padding: 1rem; background: #f9f9f9; }
-    h1, h2 { color: #2c3e50; }
-    .receta { background: white; border-radius: 1rem; padding: 1rem; margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    .receta img { width: 100%; border-radius: 0.5rem; max-height: 300px; object-fit: cover; }
-    .ingredientes, .preparacion { margin: 0.5rem 0; }
-    .categoria { background: #27ae60; color: white; padding: 0.2rem 0.5rem; border-radius: 0.3rem; display: inline-block; font-size: 0.9rem; margin-bottom: 0.5rem; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Recetas FitCocina</h1>
-
-  <!-- RECETA 1 -->
-  <div class="receta">
-    <div class="categoria">Aperitivo</div>
-    <h2>Brochetas de aceituna y pimiento</h2>
-    <img src="public/images/brochetas-aceituna-pimiento.jpg" alt="Brochetas de aceituna y pimiento">
-    <div class="ingredientes">
-      <strong>Ingredientes:</strong>
-      <ul>
-        <li>Aceitunas verdes y negras</li>
-        <li>Pimiento rojo troceado</li>
-        <li>Hojas de albahaca</li>
-      </ul>
-    </div>
-    <div class="preparacion">
-      <strong>Preparación:</strong>
-      <ol>
-        <li>Ensarta en palitos aceituna, pimiento y albahaca.</li>
-        <li>Aliña con aceite de oliva y pimienta.</li>
-        <li>Sirve frío o a temperatura ambiente.</li>
-      </ol>
-    </div>
-  </div>
-
-  <!-- RECETA 2 -->
-  <div class="receta">
-    <div class="categoria">Aperitivo</div>
-    <h2>Garbanzos crujientes al horno</h2>
-    <img src="public/images/garbanzos-crujientes.jpg" alt="Garbanzos crujientes al horno">
-    <div class="ingredientes">
-      <strong>Ingredientes:</strong>
-      <ul>
-        <li>200 g garbanzos cocidos</li>
-        <li>1 cda. AOVE</li>
-        <li>½ cdita pimentón ahumado</li>
-        <li>¼ cdita comino</li>
-      </ul>
-    </div>
-    <div class="preparacion">
-      <strong>Preparación:</strong>
-      <ol>
-        <li>Mezcla garbanzos con aceite y especias.</li>
-        <li>Hornea 35 min a 180 °C hasta dorados.</li>
-        <li>Deja enfriar y sirve.</li>
-      </ol>
-    </div>
-  </div>
-
-  <!-- RECETA 3 -->
-  <div class="receta">
-    <div class="categoria">Aperitivo</div>
-    <h2>Huevos rellenos de crema de aguacate</h2>
-    <img src="public/images/huevos-aguacate.jpg" alt="Huevos rellenos de crema de aguacate">
-    <div class="ingredientes">
-      <strong>Ingredientes:</strong>
-      <ul>
-        <li>4 huevos duros</li>
-        <li>1 aguacate</li>
-        <li>1 cda. AOVE</li>
-        <li>Limón y sal al gusto</li>
-      </ul>
-    </div>
-    <div class="preparacion">
-      <strong>Preparación:</strong>
-      <ol>
-        <li>Parte huevos, retira yemas.</li>
-        <li>Tritura yema + aguacate + aceite + limón.</li>
-        <li>Rellena claras justo antes de servir.</li>
-      </ol>
-    </div>
-  </div>
-
-  <!-- RECETA 4 -->
-  <div class="receta">
-    <div class="categoria">Aperitivo</div>
-    <h2>Chips de zanahoria</h2>
-    <img src="public/images/chips-zanahoria.jpg" alt="Chips de zanahoria">
-    <div class="ingredientes">
-      <strong>Ingredientes:</strong>
-      <ul>
-        <li>2 zanahorias</li>
-        <li>1 cdita aceite de coco o AOVE</li>
-        <li>Sal al gusto</li>
-      </ul>
-    </div>
-    <div class="preparacion">
-      <strong>Preparación:</strong>
-      <ol>
-        <li>Corta rodajas finas y mezcla con aceite.</li>
-        <li>Hornea o air‑fry a 180 °C durante 15‑20 min.</li>
-        <li>Sirve con hummus o guacamole.</li>
-      </ol>
-    </div>
-  </div>
-
-  <!-- RECETA 5 -->
-  <div class="receta">
-    <div class="categoria">Aperitivo</div>
-    <h2>Patés vegetales con crudités</h2>
-    <img src="public/images/pates-vegetales.jpg" alt="Patés vegetales con crudités">
-    <div class="ingredientes">
-      <strong>Ingredientes:</strong>
-      <ul>
-        <li>Hummus, muhammara o mutabal</li>
-        <li>Palitos de zanahoria, apio o pan integral</li>
-      </ul>
-    </div>
-    <div class="preparacion">
-      <strong>Preparación:</strong>
-      <ol>
-        <li>Coloca los patés en cuencos pequeños.</li>
-        <li>Acompaña con verduras o pan integral.</li>
-      </ol>
-    </div>
-  </div>
-
+  <div id="recetas-container"></div>
+  <button id="chat-toggle">💬 Asistente IA</button>
+  <script src="ia/asistente.js"></script>
+  <script>
+    fetch('data/recetas.json')
+      .then(res => res.json())
+      .then(recetas => {
+        const cont = document.getElementById('recetas-container');
+        recetas.forEach(r => {
+          const div = document.createElement('div');
+          div.className = 'receta';
+          div.innerHTML = `
+            <div class="categoria">${r.categoria}</div>
+            <h2>${r.titulo}</h2>
+            <img src="images/${r.imagen}" alt="${r.titulo}">
+            <div class="ingredientes"><strong>Ingredientes:</strong><ul>${
+              r.ingredientes.map(i=>`<li>${i}</li>`).join('')
+            }</ul></div>
+            <div class="preparacion"><strong>Preparación:</strong><ol>${
+              r.pasos.map(p=>`<li>${p}</li>`).join('')
+            }</ol></div>`;
+          cont.appendChild(div);
+        });
+      });
+  </script>
 </body>
 </html>
