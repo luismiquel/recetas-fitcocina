@@ -68,5 +68,75 @@
     "imagen": "aperitivo-10-mini-tortillas-espinaca.jpg",
     "ingredientes": ["2 huevos", "Un puñado de espinacas frescas", "1 cda. queso rallado light", "Sal"],
     "pasos": ["Bate los huevos, añade espinaca y queso.", "Cocina en sartén pequeña o molde al horno."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Palitos de zanahoria al horno",
+    "imagen": "aperitivo-11-palitos-zanahoria-horno.jpg",
+    "ingredientes": ["2 zanahorias grandes", "1 cda. aceite de oliva", "Pimienta", "Pimentón dulce"],
+    "pasos": ["Corta zanahorias en tiras.", "Condimenta con aceite y especias.", "Hornea 25 min a 180 °C."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Edamame con sal y limón",
+    "imagen": "aperitivo-12-edamame-limon.jpg",
+    "ingredientes": ["200 g edamame congelado", "Sal marina", "Zumo de limón"],
+    "pasos": ["Hierve el edamame 5 minutos.", "Escurre, rocía con limón y añade sal."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Tostas de hummus y tomate seco",
+    "imagen": "aperitivo-13-tostas-hummus-tomate.jpg",
+    "ingredientes": ["2 tostadas integrales", "2 cdas. hummus", "Tomate seco en tiras"],
+    "pasos": ["Unta el hummus sobre las tostadas.", "Decora con tomate seco."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Aceitunas marinadas caseras",
+    "imagen": "aperitivo-14-aceitunas-marinadas.jpg",
+    "ingredientes": ["Aceitunas verdes", "Aceite de oliva", "Ajo picado", "Orégano"],
+    "pasos": ["Mezcla todos los ingredientes.", "Deja reposar 1 hora antes de servir."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Gazpacho ligero",
+    "imagen": "aperitivo-15-gazpacho-ligero.jpg",
+    "ingredientes": ["3 tomates maduros", "1/2 pepino", "1/4 pimiento verde", "Ajo, sal, aceite y vinagre"],
+    "pasos": ["Tritura todos los ingredientes.", "Sirve muy frío."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Canapés de salmón y aguacate",
+    "imagen": "aperitivo-16-canapes-salmon-aguacate.jpg",
+    "ingredientes": ["Rebanadas de pan integral", "Salmón ahumado", "Aguacate en láminas"],
+    "pasos": ["Coloca el aguacate sobre el pan.", "Añade el salmón encima."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Crema fría de calabacín",
+    "imagen": "aperitivo-17-crema-fria-calabacin.jpg",
+    "ingredientes": ["1 calabacín cocido", "1 yogur natural", "Hierbabuena", "Sal y pimienta"],
+    "pasos": ["Tritura todos los ingredientes.", "Sirve frío decorado con hojas de hierbabuena."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Bastones de apio con crema de cacahuete",
+    "imagen": "aperitivo-18-apio-crema-cacahuete.jpg",
+    "ingredientes": ["Bastones de apio", "2 cdas. crema de cacahuete natural"],
+    "pasos": ["Rellena las ranuras del apio con la crema.", "Sirve como snack fresco."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Chips de manzana con canela",
+    "imagen": "aperitivo-19-chips-manzana-canela.jpg",
+    "ingredientes": ["1 manzana", "Canela molida"],
+    "pasos": ["Corta la manzana en rodajas finas.", "Espolvorea canela.", "Hornea 1 hora a 100 °C."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Tzatziki ligero",
+    "imagen": "aperitivo-20-tzatziki-ligero.jpg",
+    "ingredientes": ["1 yogur griego desnatado", "Pepino rallado", "Ajo picado", "Zumo de limón", "Menta fresca"],
+    "pasos": ["Mezcla todos los ingredientes.", "Sirve frío con pan pita o crudités."]
   }
 ]
