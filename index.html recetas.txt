@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas FitCocina</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; }
+    h1 { text-align: center; background: #28a745; color: white; padding: 20px; }
+    .grid-recetas { display: grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap: 20px; padding: 20px; }
+    .receta { background: white; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); padding: 15px; }
+    .receta img { width: 100%; border-radius: 10px; }
+    .receta h3 { margin: 10px 0; color: #28a745; }
+    .receta ul { padding-left: 20px; }
+    .receta li { margin-bottom: 5px; }
+    .asistente { display: flex; align-items: center; gap: 10px; margin: 10px 0; }
+    .asistente img { width: 40px; height: 40px; border-radius: 50%; }
+    .asistente .mensaje { font-size: 0.9em; background: #e6f5e6; padding: 8px 12px; border-radius: 8px; }
+    button { background: #28a745; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Recetas FitCocina</h1>
+  <section class="grid-recetas">
+
+    <!-- Ejemplo de receta ya traducida y con guía -->
+    <article class="receta">
+      <img src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg" alt="Salmón al horno con hinojo y tomates">
+      <h3>Salmón al horno con hinojo y tomates</h3>
+      <ul>
+        <li>Hinojo 2 medianos</li>
+        <li>Perejil 2 cdas picado</li>
+        <li>Zumo de limón 1 unidad</li>
+        <li>Tomates cherry 175 g</li>
+        <li>Aceite de oliva 1 cda</li>
+        <li>Salmón 350 g</li>
+        <li>Aceitunas negras para servir</li>
+      </ul>
+      <div class="asistente">
+        <img src="https://cdn-icons-png.flaticon.com/512/1995/1995500.png" alt="Chef Fit" class="avatar">
+        <div class="mensaje">¡Hola! Soy Chef Fit. Vamos con el paso a paso.</div>
+      </div>
+      <p>Pasos de la receta:</p>
+      <ol>
+        <li>Paso 1: Precalienta el horno a 180 °C.</li>
+        <li style="display:none">Paso 2: Corta los bulbos de hinojo en cuñas.</li>
+        <li style="display:none">Paso 3: Coloca el hinojo y tomates en una bandeja con aceite.</li>
+        <li style="display:none">Paso 4: Añade el salmón encima y rocía el zumo de limón.</li>
+        <li style="display:none">Paso 5: Hornea unos 15–20 minutos hasta que esté cocido.</li>
+        <li style="display:none">Paso 6: Sirve con perejil y aceitunas negras.</li>
+      </ol>
+      <button onclick="mostrarPaso(this)">Siguiente paso</button>
+    </article>
+
+    <!-- Puedes duplicar este bloque para las demás recetas -->
+
+  </section>
+  <script>
+    function mostrarPaso(btn) {
+      const pasos = btn.previousElementSibling.querySelectorAll('li');
+      for (let i = 0; i < pasos.length; i++) {
+        if (pasos[i].style.display !== 'none') {
+          pasos[i].style.display = 'none';
+          if (i + 1 < pasos.length) pasos[i+1].style.display = 'list-item';
+          else btn.remove();
+          break;
+        }
+      }
+    }
+  </script>
+</body>
+</html>
