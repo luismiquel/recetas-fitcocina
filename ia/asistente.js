@@ -19,11 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
           log.innerHTML += '<div><strong>Tú:</strong> ' + q + '</div>';
           input.value = '';
 
-          let respuesta = "Lo siento, estoy aprendiendo… 🤖";
-          if (q.toLowerCase().includes('ingrediente')) {
-            respuesta = "Puedes ver los ingredientes justo debajo de cada receta. 😊";
-          } else if (q.toLowerCase().includes('tiempo')) {
-            respuesta = "El tiempo varía según la receta. Revisa los pasos listados.";
-          }
+          let resp = "Lo siento, aún estoy aprendiendo.";
+if (/ingred/i.test(q)) {
+  resp = "Puedes ver los ingredientes justo debajo del nombre de cada receta.";
+} else if (/tiempo|hornea|minuto|horno/i.test(q)) {
+  resp = "El tiempo está en los pasos de preparación, suele estar en minutos.";
+}
 
-          log.innerHTML +=
