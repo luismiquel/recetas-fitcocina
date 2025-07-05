@@ -3,14 +3,36 @@
     "categoria": "Aperitivo",
     "titulo": "Brochetas de aceituna y pimiento",
     "imagen": "brochetas-aceituna-pimiento.jpg",
-    "ingredientes": ["Aceitunas verdes y negras","Pimiento rojo troceado","Hojas de albahaca"],
-    "pasos": ["Ensarta en palitos aceituna, pimiento y albahaca.","Aliña con aceite de oliva y pimienta.","Sirve frío o a temperatura ambiente."]
+    "ingredientes": ["Aceitunas verdes y negras", "Pimiento rojo troceado", "Hojas de albahaca", "Aceite de oliva", "Pimienta negra"],
+    "pasos": ["Ensarta en palitos aceituna, pimiento y albahaca.", "Aliña con aceite de oliva y pimienta.", "Sirve frío o a temperatura ambiente."]
   },
   {
     "categoria": "Aperitivo",
     "titulo": "Garbanzos crujientes al horno",
-    "imagen": "garbanzos-crujientes.jpg",
-    "ingredientes": ["200 g garbanzos cocidos","1 cda. AOVE","½ cdita pimentón ahumado","¼ cdita comino"],
-    "pasos": ["Mezcla garbanzos con aceite y especias.","Hornea 35 min a 180 °C hasta dorados.","Deja enfriar y sirve."]
-  }
+    "imagen": "garbanzos-crujientes-al-horno.jpg",
+    "ingredientes": ["200 g garbanzos cocidos", "1 cda. aceite de oliva", "½ cdita pimentón ahumado", "¼ cdita comino", "Sal y pimienta"],
+    "pasos": ["Mezcla garbanzos con aceite y especias.", "Hornea 35 min a 180 °C hasta dorados.", "Deja enfriar y sirve."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Huevos rellenos de crema de aguacate",
+    "imagen": "huevos-rellenos-aguacate.jpg",
+    "ingredientes": ["4 huevos duros", "1 aguacate", "1 cda. aceite de oliva", "Jugo de limón", "Sal y pimienta"],
+    "pasos": ["Parte huevos, retira yemas.", "Tritura yema + aguacate + aceite + limón.", "Rellena claras justo antes de servir."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Chips de zanahoria",
+    "imagen": "chips-zanahoria.jpg",
+    "ingredientes": ["2 zanahorias", "1 cdita aceite de oliva", "Sal"],
+    "pasos": ["Corta rodajas finas y mezcla con aceite.", "Hornea a 180 °C durante 15‑20 min.", "Sirve con hummus o guacamole."]
+  },
+  {
+    "categoria": "Aperitivo",
+    "titulo": "Pates vegetales con crudités",
+    "imagen": "pates-vegetales.jpg",
+    "ingredientes": ["Hummus o mutabal", "Palitos de zanahoria, apio o pan integral"],
+    "pasos": ["Coloca los patés en cuencos pequeños.", "Acompaña con verduras o pan integral."]
+  },
+  { ... 75 recetas más ... }
 ]
