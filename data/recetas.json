@@ -1,48 +1,36 @@
 [
-  // 🔹 APERITIVOS (20 recetas)
   {
     "categoria": "Aperitivo",
     "titulo": "Brochetas de aceituna y pimiento",
     "imagen": "aperitivo-01-brochetas-aceituna-pimiento.jpg",
-    "ingredientes": ["Aceitunas verdes y negras", "Pimiento rojo troceado", "Hojas de albahaca", "Aceite de oliva", "Pimienta negra"],
-    "pasos": ["Ensarta aceitunas, pimiento y albahaca en palillos.", "Aliña con aceite y pimienta.", "Sirve frío."]
+    "ingredientes": [
+      "Aceitunas verdes y negras",
+      "Pimiento rojo troceado",
+      "Hojas de albahaca",
+      "Aceite de oliva",
+      "Pimienta negra"
+    ],
+    "pasos": [
+      "Ensarta aceitunas, pimiento y albahaca en palillos.",
+      "Aliña con aceite y pimienta.",
+      "Sirve frío."
+    ]
   },
   {
     "categoria": "Aperitivo",
     "titulo": "Garbanzos crujientes al horno",
     "imagen": "aperitivo-02-garbanzos-crujientes-horno.jpg",
-    "ingredientes": ["200 g garbanzos cocidos", "1 cda. AOVE", "1/2 cdita pimentón ahumado", "1/4 cdita comino", "Sal"],
-    "pasos": ["Mezcla garbanzos con aceite y especias.", "Hornea 35 min a 180 °C.", "Enfría y sirve."]
-  },
-  // ... 18 receitas más de aperitivos ...
-  
-  // 🔹 PRIMEROS (20 recetas)
-  {
-    "categoria": "Primero",
-    "titulo": "Ensalada de quinoa y aguacate",
-    "imagen": "primero-01-ensalada-quinoa-aguacate.jpg",
-    "ingredientes": ["100 g quinoa cocida", "1 aguacate", "Tomate cherry", "Cebolla", "Limón", "Aceite", "Sal"],
-    "pasos": ["Mezcla quinoa con vegetales picados.", "Aliña con limón, aceite y sal.", "Sirve fresca."]
-  },
-  // ... 19 recetas más de primeros ...
-  
-  // 🔹 SEGUNDOS (20 recetas)
-  {
-    "categoria": "Segundo",
-    "titulo": "Salmón al horno con vegetales",
-    "imagen": "segundo-01-salmon-vegetales-horno.jpg",
-    "ingredientes": ["200 g salmón", "Brócoli", "Zanahoria", "Aceite", "Limón", "Hierbas", "Sal"],
-    "pasos": ["Coloca salmón y verduras en bandeja.", "Aliña y hornea 20 min a 180 °C.", "Sirve caliente."]
-  },
-  // ... 19 recetas más de segundos ...
-  
-  // 🔹 POSTRES (20 recetas)
-  {
-    "categoria": "Postre",
-    "titulo": "Yogur griego con frutos rojos",
-    "imagen": "postre-01-yogur-frutos-rojos.jpg",
-    "ingredientes": ["150 g yogur griego", "Frutos rojos", "1 cdita miel", "Granola opcional"],
-    "pasos": ["Sirve yogur en cuenco.", "Añade frutos rojos y miel.", "Espolvorea granola."]
+    "ingredientes": [
+      "200 g garbanzos cocidos",
+      "1 cda. AOVE",
+      "1/2 cdita pimentón ahumado",
+      "1/4 cdita comino",
+      "Sal"
+    ],
+    "pasos": [
+      "Mezcla garbanzos con aceite y especias.",
+      "Hornea 35 min a 180 °C.",
+      "Enfría y sirve."
+    ]
   }
-  // ... 19 recetas más de postres ...
 ]
