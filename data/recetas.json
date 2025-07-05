@@ -80,5 +80,80 @@
             "Enrolla cada espárrago con jamón.",
             "Rocía con un poco de aceite y sirve frío."
         ]
+    },
+    {
+        "categoria": "Aperitivo",
+        "titulo": "Chips de kale al horno",
+        "imagen": "aperitivo-06-chips-kale-horno.jpg",
+        "ingredientes": [
+            "Hojas de kale",
+            "1 cda. aceite de oliva",
+            "Sal marina"
+        ],
+        "pasos": [
+            "Lava y seca bien las hojas.",
+            "Rocía con aceite y sal.",
+            "Hornea 15 min a 150 °C."
+        ]
+    },
+    {
+        "categoria": "Aperitivo",
+        "titulo": "Dip de yogur y pepino",
+        "imagen": "aperitivo-07-dip-yogur-pepino.jpg",
+        "ingredientes": [
+            "1 yogur natural",
+            "1/2 pepino rallado",
+            "1 diente de ajo",
+            "Hierbabuena",
+            "Sal y pimienta"
+        ],
+        "pasos": [
+            "Mezcla todos los ingredientes.",
+            "Sirve frío con pan pita o verduras."
+        ]
+    },
+    {
+        "categoria": "Aperitivo",
+        "titulo": "Tomates cherry rellenos de queso",
+        "imagen": "aperitivo-08-tomates-rellenos-queso.jpg",
+        "ingredientes": [
+            "Tomates cherry",
+            "Queso crema light",
+            "Cebollino picado"
+        ],
+        "pasos": [
+            "Corta la tapa a los tomates.",
+            "Rellena con queso y decora con cebollino."
+        ]
+    },
+    {
+        "categoria": "Aperitivo",
+        "titulo": "Tostadas integrales con aguacate",
+        "imagen": "aperitivo-09-tostadas-aguacate.jpg",
+        "ingredientes": [
+            "2 rebanadas de pan integral",
+            "1 aguacate",
+            "Zumo de limón",
+            "Pimienta y sal"
+        ],
+        "pasos": [
+            "Tritura el aguacate y mezcla con limón y sal.",
+            "Unta sobre las tostadas y añade pimienta."
+        ]
+    },
+    {
+        "categoria": "Aperitivo",
+        "titulo": "Mini tortillas de espinaca",
+        "imagen": "aperitivo-10-mini-tortillas-espinaca.jpg",
+        "ingredientes": [
+            "2 huevos",
+            "Un puñado de espinacas frescas",
+            "1 cda. queso rallado light",
+            "Sal"
+        ],
+        "pasos": [
+            "Bate los huevos, añade espinaca y queso.",
+            "Cocina en sartén pequeña o molde al horno."
+        ]
     }
 ]
