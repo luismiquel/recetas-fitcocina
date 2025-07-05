@@ -11,18 +11,47 @@
   <div id="recetas-container"></div>
   <button id="chat-toggle">💬 Asistente IA</button>
 
- <script>
-  window.addEventListener("DOMContentLoaded", () => {
-    const script = document.createElement("script");
-    script.src = "ia/asistente.js";
-    document.body.appendChild(script);
-  });
-</script>
+  <!-- Asistente IA directamente embebido -->
+  <script>
+    console.log("Inline script loaded");
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById('chat-toggle');
+      toggle.addEventListener('click', () => {
+        console.log("Botón chat pulsado");
+        if (document.getElementById('chatbot')) return;
+        const div = document.createElement('div');
+        div.id = 'chatbot';
+        div.style = 'position:fixed;bottom:4rem;right:1rem;width:300px;height:300px;background:white;border:1px solid #ccc;padding:1rem;z-index:9999;';
+        div.innerHTML =
+          '<div id="chat-log" style="overflow-y:auto;height:80%;margin-bottom:0.5rem;"></div>' +
+          '<input id="chat-input" placeholder="Escribe aquí..." style="width:100%;padding:0.5rem;"/>';
+        document.body.appendChild(div);
+
+        const input = document.getElementById('chat-input');
+        const log = document.getElementById('chat-log');
+        input.addEventListener('keydown', e => {
+          if (e.key === 'Enter' && input.value.trim()) {
+            log.innerHTML += `<div><strong>Tú:</strong> ${input.value}</div>`;
+            const q = input.value.toLowerCase().trim();
+            input.value = '';
+            const resp = q.includes('ingrediente')
+              ? 'Aquí están los ingredientes en cada receta.'
+              : q.includes('tiempo')
+              ? 'Mira los pasos: allí verás tiempos aproximados.'
+              : 'Lo siento, aún estoy aprendiendo.';
+            log.innerHTML += `<div><strong>IA:</strong> ${resp}</div>`;
+          }
+        });
+      });
+    });
+  </script>
 
   <script>
+    console.log("Fetch recetas...");
     fetch('data/recetas.json')
       .then(res => res.json())
       .then(recetas => {
+        console.log("Recetas cargadas", recetas.length);
         const cont = document.getElementById('recetas-container');
         recetas.forEach(r => {
           const div = document.createElement('div');
@@ -39,7 +68,7 @@
             }</ol></div>`;
           cont.appendChild(div);
         });
-      });
+      }).catch(e => console.error("Error cargando recetas:", e));
   </script>
 </body>
 </html>
