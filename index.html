@@ -11,7 +11,14 @@
   <div id="recetas-container"></div>
   <button id="chat-toggle">💬 Asistente IA</button>
 
-  <script src="ia/asistente.js"></script>
+ <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const script = document.createElement("script");
+    script.src = "ia/asistente.js";
+    document.body.appendChild(script);
+  });
+</script>
+
   <script>
     fetch('data/recetas.json')
       .then(res => res.json())
