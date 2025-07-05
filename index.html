@@ -61,16 +61,20 @@
         const r = info.meals[0];
         return {
           id: m.idMeal,
-          name: traducir(r.strMeal),
-          category: m.category,
-          img: r.strMealThumb,
-          ingredients: Array.from({length:20}, (_,i)=>r[`strIngredient${i+1}`] ? traducir(r[`strIngredient${i+1}`])+' '+traducir(r[`strMeasure${i+1}`]) : null).filter(x=>x),
-          steps: r.strInstructions.split('. ').filter(x=>x).map(x => traducir(x.trim()+'.'))
-        };
-      }));
-      console.log('🎉 Recetas listas:', recetas.length);
-      render(recetas);
-    }
+          function traducir(text) {
+  const m = {
+    'Preheat':'Precalienta','Mix':'Mezcla','Cook':'Cocina','Serve':'Sirve','and':'y','with':'con',
+    'in':'en','Add':'Añade','Heat':'Calienta','Salt':'Sal','Pepper':'Pimienta','Oil':'Aceite',
+    'Chicken':'Pollo','Beef':'Carne de res','Seafood':'Mariscos','Dessert':'Postre',
+    'medium':'mediano','cup':'taza','tbsp':'cda','tsp':'cdita','g':'g','lb':'libra',
+    'slice':'rebanada','slices':'rebanadas','fillet':'filete','fillets':'filetes',
+    'sprig':'ramita','sprigs':'ramitas','clove':'diente','cloves':'dientes',
+    'can':'lata','large':'grande','small':'pequeño','chopped':'picado','diced':'cortado',
+    'minced':'picado fino','pieces':'piezas','jar':'frasco','bunch':'manojo'
+  };
+  return text.replace(new RegExp(Object.keys(m).join('|'),'gi'), w => m[w]);
+}
+
 
     function render(arr) {
       const html = arr.map(r => `
