@@ -313,7 +313,44 @@
             "Cebolla morada",
             "Aceite de oliva",
             "Zumo de limón"
-        ],
+        ],[
+  {
+    "categoria": "Primero",
+    "titulo": "Ensalada de quinoa con verduras",
+    "imagen": "primero-01-ensalada-quinoa.jpg",
+    "ingredientes": ["1 taza de quinoa cocida", "Pimiento rojo y verde", "Tomates cherry", "Cebolla morada", "Aceite de oliva", "Zumo de limón"],
+    "pasos": ["Mezcla la quinoa con las verduras picadas.", "Aliña con aceite y limón."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Sopa de lentejas rojas",
+    "imagen": "primero-02-sopa-lentejas-rojas.jpg",
+    "ingredientes": ["1 taza lentejas rojas", "1 zanahoria", "1 cebolla", "1 diente de ajo", "1 cdita comino", "Sal y pimienta"],
+    "pasos": ["Sofríe ajo, cebolla y zanahoria picados.", "Agrega lentejas y agua, cocina 20 min.", "Tritura si deseas una textura cremosa."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Crema de calabaza",
+    "imagen": "primero-03-crema-calabaza.jpg",
+    "ingredientes": ["500 g calabaza", "1 puerro", "1 patata", "Aceite de oliva", "Sal y nuez moscada"],
+    "pasos": ["Cocina calabaza, patata y puerro en agua.", "Tritura con aceite y nuez moscada."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Ensalada de garbanzos mediterránea",
+    "imagen": "primero-04-ensalada-garbanzos.jpg",
+    "ingredientes": ["400 g garbanzos cocidos", "Pepino", "Tomate", "Cebolla morada", "Aceitunas negras", "Limón y aceite"],
+    "pasos": ["Mezcla todos los ingredientes picados.", "Aliña con limón y aceite."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Gazpacho andaluz",
+    "imagen": "primero-05-gazpacho-andaluz.jpg",
+    "ingredientes": ["5 tomates maduros", "1 pepino", "1/2 pimiento", "1 diente de ajo", "Aceite, vinagre y sal"],
+    "pasos": ["Tritura todos los ingredientes.", "Sirve muy frío."]
+  }
+]    
+
         "pasos": [
             "Mezcla la quinoa con las verduras picadas.",
             "Aliña con aceite y limón."
