@@ -31,12 +31,28 @@ document.addEventListener("DOMContentLoaded", () => {
         input.value = '';
 
         let respuesta = "Lo siento, no tengo información sobre eso.";
-        const receta = RECETAS.find(r => pregunta.includes(r.titulo.toLowerCase()));
+
+        const receta = RECETAS.find(r =>
+          r.titulo.toLowerCase().split(" ").some(palabra =>
+            pregunta.includes(palabra)
+          )
+        );
 
         if (receta) {
           if (pregunta.includes("ingrediente")) {
             respuesta = `Los ingredientes de "${receta.titulo}" son:<ul>` +
               receta.ingredientes.map(i => `<li>${i}</li>`).join('') + "</ul>";
-          } else if (pregunta.includes("preparación") || pregunta.includes("paso") || pregunta.includes("hacer")) {
+          } else if (pregunta.includes("preparación") || pregunta.includes("paso") || pregunta.includes("hacer") || pregunta.includes("cómo")) {
             respuesta = `La preparación de "${receta.titulo}" es:<ol>` +
-              receta.pasos.map(p => `<li>${p}</li>
+              receta.pasos.map(p => `<li>${p}</li>`).join('') + "</ol>";
+          } else {
+            respuesta = `¿Quieres saber los ingredientes o los pasos de "${receta.titulo}"?`;
+          }
+        }
+
+        log.innerHTML += `<div><strong>IA:</strong> ${respuesta}</div>`;
+        log.scrollTop = log.scrollHeight;
+      }
+    });
+  });
+});
