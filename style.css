@@ -1,57 +1,12 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0; padding: 0;
-  background: #f8f9fa;
-  color: #333;
-}
-
-h1 {
-  text-align: center;
-  padding: 20px;
-  background-color: #28a745;
-  color: white;
-  margin: 0;
-}
-
-#recetas-fitcocina {
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.grid-recetas {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.receta {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.2s;
-}
-.receta:hover {
-  transform: scale(1.02);
-}
-.receta img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.receta h3 {
-  margin: 10px;
-  font-size: 1.2em;
-}
-.receta ul, .receta p {
-  padding: 0 10px 10px;
-  font-size: 0.9em;
-}
-.receta ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-
-
+body { font-family: sans-serif; padding: 1rem; background: #f9f9f9; }
+h1, h2 { color: #2c3e50; }
+.receta { background: white; border-radius: 1rem; padding: 1rem; margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+.receta img { width: 100%; border-radius: 0.5rem; max-height: 300px; object-fit: cover;}
+.ingredientes, .preparacion { margin: 0.5rem 0;}
+.categoria { background: #27ae60; color: white; padding: .2rem .5rem;
+  border-radius: .3rem; display: inline-block; font-size: .9rem;
+  margin-bottom: .5rem;}
+#chat-toggle { position: fixed; bottom: 1rem; right: 1rem; background: #3498db;
+  color: white; padding: .8rem 1.2rem; border: none; border-radius: 50%;
+  font-size: 1.5rem; cursor: pointer;}
