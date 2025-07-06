@@ -147,3 +147,188 @@
     "pasos": ["Mezcla la quinoa con las verduras picadas.", "Aliña con aceite y limón."]
   }
 ]
+[
+  {
+    "categoria": "Primero",
+    "titulo": "Sopa de lentejas rojas",
+    "imagen": "primero-02-sopa-lentejas-rojas.jpg",
+    "ingredientes": ["1 taza lentejas rojas", "1 zanahoria", "1 cebolla", "1 diente de ajo", "1 cdita comino", "Sal y pimienta"],
+    "pasos": ["Sofríe ajo, cebolla y zanahoria picados.", "Agrega lentejas y agua, cocina 20 min.", "Tritura si deseas una textura cremosa."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Crema de calabaza",
+    "imagen": "primero-03-crema-calabaza.jpg",
+    "ingredientes": ["500 g calabaza", "1 puerro", "1 patata", "Aceite de oliva", "Sal y nuez moscada"],
+    "pasos": ["Cocina calabaza, patata y puerro en agua.", "Tritura con aceite y nuez moscada."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Ensalada de garbanzos mediterránea",
+    "imagen": "primero-04-ensalada-garbanzos.jpg",
+    "ingredientes": ["400 g garbanzos cocidos", "Pepino", "Tomate", "Cebolla morada", "Aceitunas negras", "Limón y aceite"],
+    "pasos": ["Mezcla todos los ingredientes picados.", "Aliña con limón y aceite."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Gazpacho andaluz",
+    "imagen": "primero-05-gazpacho-andaluz.jpg",
+    "ingredientes": ["5 tomates maduros", "1 pepino", "1/2 pimiento", "1 diente de ajo", "Aceite, vinagre y sal"],
+    "pasos": ["Tritura todos los ingredientes.", "Sirve muy frío."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Tabulé de bulgur y menta",
+    "imagen": "primero-06-tabule-bulgur-menta.jpg",
+    "ingredientes": ["1 taza de bulgur cocido", "1 tomate", "1/2 pepino", "1/2 cebolla", "Zumo de limón", "Menta fresca", "Aceite de oliva", "Sal"],
+    "pasos": ["Pica las verduras finamente.", "Mezcla con el bulgur, menta, limón y aceite.", "Refrigera antes de servir."]
+  }
+]
+[
+  {
+    "categoria": "Primero",
+    "titulo": "Sopa de lentejas rojas",
+    "imagen": "primero-02-sopa-lentejas-rojas.jpg",
+    "ingredientes": ["1 taza lentejas rojas", "1 zanahoria", "1 cebolla", "1 diente de ajo", "1 cdita comino", "Sal y pimienta"],
+    "pasos": ["Sofríe ajo, cebolla y zanahoria picados.", "Agrega lentejas y agua, cocina 20 min.", "Tritura si deseas una textura cremosa."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Crema de calabaza",
+    "imagen": "primero-03-crema-calabaza.jpg",
+    "ingredientes": ["500 g calabaza", "1 puerro", "1 patata", "Aceite de oliva", "Sal y nuez moscada"],
+    "pasos": ["Cocina calabaza, patata y puerro en agua.", "Tritura con aceite y nuez moscada."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Ensalada de garbanzos mediterránea",
+    "imagen": "primero-04-ensalada-garbanzos.jpg",
+    "ingredientes": ["400 g garbanzos cocidos", "Pepino", "Tomate", "Cebolla morada", "Aceitunas negras", "Limón y aceite"],
+    "pasos": ["Mezcla todos los ingredientes picados.", "Aliña con limón y aceite."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Gazpacho andaluz",
+    "imagen": "primero-05-gazpacho-andaluz.jpg",
+    "ingredientes": ["5 tomates maduros", "1 pepino", "1/2 pimiento", "1 diente de ajo", "Aceite, vinagre y sal"],
+    "pasos": ["Tritura todos los ingredientes.", "Sirve muy frío."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Tabulé de bulgur y menta",
+    "imagen": "primero-06-tabule-bulgur-menta.jpg",
+    "ingredientes": ["1 taza de bulgur cocido", "1 tomate", "1/2 pepino", "1/2 cebolla", "Zumo de limón", "Menta fresca", "Aceite de oliva", "Sal"],
+    "pasos": ["Pica las verduras finamente.", "Mezcla con el bulgur, menta, limón y aceite.", "Refrigera antes de servir."]
+  }
+]
+[
+  {
+    "categoria": "Primero",
+    "titulo": "Crema de zanahoria y jengibre",
+    "imagen": "primero-07-crema-zanahoria-jengibre.jpg",
+    "ingredientes": ["4 zanahorias", "1 patata", "1 trozo de jengibre fresco", "1 cda. aceite de oliva", "Sal y pimienta"],
+    "pasos": ["Hierve zanahorias, patata y jengibre hasta que estén tiernos.", "Tritura con un poco del agua de cocción y aliña."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Ensalada de lentejas con vinagreta de mostaza",
+    "imagen": "primero-08-ensalada-lentejas-mostaza.jpg",
+    "ingredientes": ["1 taza lentejas cocidas", "Pimiento rojo", "Zanahoria", "Cebolla", "1 cda. mostaza", "Aceite y vinagre"],
+    "pasos": ["Corta finas las verduras y mezcla con lentejas.", "Aliña con una vinagreta de mostaza, aceite y vinagre."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Sopa miso con tofu y algas",
+    "imagen": "primero-09-sopa-miso-tofu.jpg",
+    "ingredientes": ["750 ml agua", "1 cda. pasta miso", "Tofu en cubos", "Alga wakame", "Cebolleta"],
+    "pasos": ["Disuelve el miso en agua caliente.", "Añade tofu, alga y cebolleta picada.", "Calienta sin hervir y sirve."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Crema de espinacas",
+    "imagen": "primero-10-crema-espinacas.jpg",
+    "ingredientes": ["200 g espinacas frescas", "1 patata", "1 cda. aceite de oliva", "Sal", "Leche vegetal (opcional)"],
+    "pasos": ["Hierve patata y espinacas.", "Tritura con el aceite y un poco de leche si deseas textura más cremosa."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Ensalada de arroz integral y aguacate",
+    "imagen": "primero-11-ensalada-arroz-aguacate.jpg",
+    "ingredientes": ["1 taza de arroz integral cocido", "1 aguacate", "Tomates cherry", "Cebolla morada", "Aceite de oliva", "Zumo de limón"],
+    "pasos": ["Corta y mezcla todos los ingredientes.", "Aliña al gusto."]
+  }
+]
+[
+  {
+    "categoria": "Primero",
+    "titulo": "Tabulé de bulgur",
+    "imagen": "primero-12-tabule-bulgur.jpg",
+    "ingredientes": ["1 taza bulgur cocido", "Pepino", "Tomate", "Cebolla", "Perejil fresco", "Zumo de limón", "Aceite de oliva"],
+    "pasos": ["Pica las verduras finas y mezcla con el bulgur.", "Aliña con limón, aceite y perejil."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Crema de brócoli",
+    "imagen": "primero-13-crema-brocoli.jpg",
+    "ingredientes": ["1 brócoli", "1 patata", "1 puerro", "Agua", "Sal", "Aceite de oliva"],
+    "pasos": ["Cocina las verduras hasta que estén tiernas.", "Tritura con un poco de agua y aceite."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Ensalada templada de espinacas y champiñones",
+    "imagen": "primero-14-ensalada-espinacas-champis.jpg",
+    "ingredientes": ["Espinacas frescas", "Champiñones", "1 diente de ajo", "Aceite de oliva", "Vinagre balsámico"],
+    "pasos": ["Saltea champiñones con ajo.", "Añade sobre las espinacas y aliña con vinagre."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Sopa de verduras",
+    "imagen": "primero-15-sopa-verduras.jpg",
+    "ingredientes": ["Zanahoria", "Puerro", "Apio", "Calabacín", "Agua", "Sal y pimienta"],
+    "pasos": ["Corta todas las verduras y cuece hasta tiernas.", "Sirve caliente."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Puré de coliflor",
+    "imagen": "primero-16-pure-coliflor.jpg",
+    "ingredientes": ["1 coliflor", "1 cda. aceite de oliva", "Sal", "Nuez moscada"],
+    "pasos": ["Hierve la coliflor hasta que esté tierna.", "Tritura con aceite, sal y nuez moscada."]
+  }
+]
+[
+  {
+    "categoria": "Primero",
+    "titulo": "Crema de zanahoria y jengibre",
+    "imagen": "primero-17-crema-zanahoria-jengibre.jpg",
+    "ingredientes": ["500 g zanahorias", "1 trozo pequeño de jengibre", "1 patata", "1 cebolla", "Aceite de oliva", "Sal"],
+    "pasos": ["Sofríe cebolla y jengibre.", "Añade zanahoria y patata troceadas.", "Cubre con agua, cuece y tritura."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Salmorejo cordobés light",
+    "imagen": "primero-18-salmorejo-light.jpg",
+    "ingredientes": ["500 g tomates maduros", "1/2 diente de ajo", "1 rebanada de pan integral", "Aceite de oliva", "Vinagre", "Sal"],
+    "pasos": ["Tritura todos los ingredientes.", "Sirve frío con huevo duro picado (opcional)."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Ensalada de lentejas",
+    "imagen": "primero-19-ensalada-lentejas.jpg",
+    "ingredientes": ["200 g lentejas cocidas", "Pimiento rojo", "Cebolla", "Zanahoria", "Aceite", "Vinagre", "Sal"],
+    "pasos": ["Pica las verduras y mezcla con las lentejas.", "Aliña al gusto."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Sopa de miso con tofu",
+    "imagen": "primero-20-sopa-miso-tofu.jpg",
+    "ingredientes": ["2 cdas. pasta de miso", "500 ml agua", "Tofu firme", "Cebollino", "Alga wakame"],
+    "pasos": ["Disuelve el miso en agua caliente.", "Agrega tofu en cubos, alga y cebollino.", "Calienta sin hervir."]
+  },
+  {
+    "categoria": "Primero",
+    "titulo": "Ensalada de arroz integral",
+    "imagen": "primero-21-ensalada-arroz-integral.jpg",
+    "ingredientes": ["1 taza arroz integral cocido", "Maíz", "Guisantes", "Tomate", "Pimiento", "Aceite y vinagre"],
+    "pasos": ["Mezcla todos los ingredientes.", "Aliña con aceite y vinagre."]
+  }
+]
