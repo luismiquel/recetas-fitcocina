@@ -145,9 +145,7 @@
     "imagen": "primero-01-ensalada-quinoa.jpg",
     "ingredientes": ["1 taza de quinoa cocida", "Pimiento rojo y verde", "Tomates cherry", "Cebolla morada", "Aceite de oliva", "Zumo de limón"],
     "pasos": ["Mezcla la quinoa con las verduras picadas.", "Aliña con aceite y limón."]
-  }
-]
-[
+  },
   {
     "categoria": "Primero",
     "titulo": "Sopa de lentejas rojas",
@@ -182,46 +180,7 @@
     "imagen": "primero-06-tabule-bulgur-menta.jpg",
     "ingredientes": ["1 taza de bulgur cocido", "1 tomate", "1/2 pepino", "1/2 cebolla", "Zumo de limón", "Menta fresca", "Aceite de oliva", "Sal"],
     "pasos": ["Pica las verduras finamente.", "Mezcla con el bulgur, menta, limón y aceite.", "Refrigera antes de servir."]
-  }
-]
-[
-  {
-    "categoria": "Primero",
-    "titulo": "Sopa de lentejas rojas",
-    "imagen": "primero-02-sopa-lentejas-rojas.jpg",
-    "ingredientes": ["1 taza lentejas rojas", "1 zanahoria", "1 cebolla", "1 diente de ajo", "1 cdita comino", "Sal y pimienta"],
-    "pasos": ["Sofríe ajo, cebolla y zanahoria picados.", "Agrega lentejas y agua, cocina 20 min.", "Tritura si deseas una textura cremosa."]
   },
-  {
-    "categoria": "Primero",
-    "titulo": "Crema de calabaza",
-    "imagen": "primero-03-crema-calabaza.jpg",
-    "ingredientes": ["500 g calabaza", "1 puerro", "1 patata", "Aceite de oliva", "Sal y nuez moscada"],
-    "pasos": ["Cocina calabaza, patata y puerro en agua.", "Tritura con aceite y nuez moscada."]
-  },
-  {
-    "categoria": "Primero",
-    "titulo": "Ensalada de garbanzos mediterránea",
-    "imagen": "primero-04-ensalada-garbanzos.jpg",
-    "ingredientes": ["400 g garbanzos cocidos", "Pepino", "Tomate", "Cebolla morada", "Aceitunas negras", "Limón y aceite"],
-    "pasos": ["Mezcla todos los ingredientes picados.", "Aliña con limón y aceite."]
-  },
-  {
-    "categoria": "Primero",
-    "titulo": "Gazpacho andaluz",
-    "imagen": "primero-05-gazpacho-andaluz.jpg",
-    "ingredientes": ["5 tomates maduros", "1 pepino", "1/2 pimiento", "1 diente de ajo", "Aceite, vinagre y sal"],
-    "pasos": ["Tritura todos los ingredientes.", "Sirve muy frío."]
-  },
-  {
-    "categoria": "Primero",
-    "titulo": "Tabulé de bulgur y menta",
-    "imagen": "primero-06-tabule-bulgur-menta.jpg",
-    "ingredientes": ["1 taza de bulgur cocido", "1 tomate", "1/2 pepino", "1/2 cebolla", "Zumo de limón", "Menta fresca", "Aceite de oliva", "Sal"],
-    "pasos": ["Pica las verduras finamente.", "Mezcla con el bulgur, menta, limón y aceite.", "Refrigera antes de servir."]
-  }
-]
-[
   {
     "categoria": "Primero",
     "titulo": "Crema de zanahoria y jengibre",
@@ -256,9 +215,7 @@
     "imagen": "primero-11-ensalada-arroz-aguacate.jpg",
     "ingredientes": ["1 taza de arroz integral cocido", "1 aguacate", "Tomates cherry", "Cebolla morada", "Aceite de oliva", "Zumo de limón"],
     "pasos": ["Corta y mezcla todos los ingredientes.", "Aliña al gusto."]
-  }
-]
-[
+  },
   {
     "categoria": "Primero",
     "titulo": "Tabulé de bulgur",
@@ -293,42 +250,313 @@
     "imagen": "primero-16-pure-coliflor.jpg",
     "ingredientes": ["1 coliflor", "1 cda. aceite de oliva", "Sal", "Nuez moscada"],
     "pasos": ["Hierve la coliflor hasta que esté tierna.", "Tritura con aceite, sal y nuez moscada."]
-  }
-]
-[
-  {
-    "categoria": "Primero",
-    "titulo": "Crema de zanahoria y jengibre",
-    "imagen": "primero-17-crema-zanahoria-jengibre.jpg",
-    "ingredientes": ["500 g zanahorias", "1 trozo pequeño de jengibre", "1 patata", "1 cebolla", "Aceite de oliva", "Sal"],
-    "pasos": ["Sofríe cebolla y jengibre.", "Añade zanahoria y patata troceadas.", "Cubre con agua, cuece y tritura."]
   },
   {
     "categoria": "Primero",
     "titulo": "Salmorejo cordobés light",
-    "imagen": "primero-18-salmorejo-light.jpg",
+    "imagen": "primero-17-salmorejo-light.jpg",
     "ingredientes": ["500 g tomates maduros", "1/2 diente de ajo", "1 rebanada de pan integral", "Aceite de oliva", "Vinagre", "Sal"],
     "pasos": ["Tritura todos los ingredientes.", "Sirve frío con huevo duro picado (opcional)."]
   },
   {
     "categoria": "Primero",
     "titulo": "Ensalada de lentejas",
-    "imagen": "primero-19-ensalada-lentejas.jpg",
+    "imagen": "primero-18-ensalada-lentejas.jpg",
     "ingredientes": ["200 g lentejas cocidas", "Pimiento rojo", "Cebolla", "Zanahoria", "Aceite", "Vinagre", "Sal"],
     "pasos": ["Pica las verduras y mezcla con las lentejas.", "Aliña al gusto."]
   },
   {
     "categoria": "Primero",
     "titulo": "Sopa de miso con tofu",
-    "imagen": "primero-20-sopa-miso-tofu.jpg",
+    "imagen": "primero-19-sopa-miso-tofu.jpg",
     "ingredientes": ["2 cdas. pasta de miso", "500 ml agua", "Tofu firme", "Cebollino", "Alga wakame"],
     "pasos": ["Disuelve el miso en agua caliente.", "Agrega tofu en cubos, alga y cebollino.", "Calienta sin hervir."]
   },
   {
     "categoria": "Primero",
     "titulo": "Ensalada de arroz integral",
-    "imagen": "primero-21-ensalada-arroz-integral.jpg",
+    "imagen": "primero-20-ensalada-arroz-integral.jpg",
     "ingredientes": ["1 taza arroz integral cocido", "Maíz", "Guisantes", "Tomate", "Pimiento", "Aceite y vinagre"],
     "pasos": ["Mezcla todos los ingredientes.", "Aliña con aceite y vinagre."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Pollo al curry ligero",
+    "imagen": "segundo-01-pollo-curry.jpg",
+    "ingredientes": ["1 pechuga de pollo", "1 cda. curry en polvo", "1/2 cebolla", "1 yogur natural desnatado", "Aceite de oliva", "Sal y pimienta"],
+    "pasos": ["Corta el pollo en dados y sofríe con la cebolla.", "Añade curry y yogur, cocina 10 min.", "Sirve caliente."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Salmón al horno con limón",
+    "imagen": "segundo-02-salmon-limon.jpg",
+    "ingredientes": ["1 filete de salmón", "Rodajas de limón", "Perejil fresco", "Aceite de oliva", "Sal"],
+    "pasos": ["Coloca el salmón en una bandeja.", "Añade limón, sal y perejil.", "Hornea 15 min a 180 °C."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Tortilla de espinacas",
+    "imagen": "segundo-03-tortilla-espinacas.jpg",
+    "ingredientes": ["2 huevos", "Un puñado de espinacas frescas", "1 cda. aceite de oliva", "Sal"],
+    "pasos": ["Bate los huevos y mezcla con las espinacas.", "Cocina en sartén hasta cuajar."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Tofu salteado con verduras",
+    "imagen": "segundo-04-tofu-verduras.jpg",
+    "ingredientes": ["100 g tofu firme", "Pimiento, zanahoria y calabacín", "Salsa de soja baja en sal", "Aceite de oliva"],
+    "pasos": ["Corta el tofu en dados y saltea.", "Añade las verduras y soja.", "Cocina hasta dorar."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Pechuga de pollo a la plancha",
+    "imagen": "segundo-05-pollo-plancha.jpg",
+    "ingredientes": ["1 pechuga de pollo", "Especias al gusto", "Aceite de oliva", "Sal y pimienta"],
+    "pasos": ["Sazona el pollo y cocina a la plancha.", "Sirve caliente."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Bacalao con tomate",
+    "imagen": "segundo-06-bacalao-tomate.jpg",
+    "ingredientes": ["1 lomo de bacalao desalado", "Tomate triturado", "Ajo y cebolla", "Aceite de oliva", "Perejil"],
+    "pasos": ["Sofríe ajo y cebolla.", "Agrega el tomate y cuece.", "Incorpora el bacalao y cocina 10 min."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Hamburguesa de lentejas",
+    "imagen": "segundo-07-hamburguesa-lentejas.jpg",
+    "ingredientes": ["200 g lentejas cocidas", "1 huevo", "Avena", "Especias", "Aceite de oliva"],
+    "pasos": ["Tritura lentejas y mezcla con huevo y avena.", "Forma hamburguesas.", "Cocina en sartén."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Pisto con huevo",
+    "imagen": "segundo-08-pisto-huevo.jpg",
+    "ingredientes": ["Calabacín", "Pimiento", "Tomate", "Cebolla", "1 huevo", "Aceite de oliva"],
+    "pasos": ["Saltea las verduras.", "Incorpora el tomate y cuece.", "Agrega el huevo al final."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Merluza al vapor",
+    "imagen": "segundo-09-merluza-vapor.jpg",
+    "ingredientes": ["1 filete de merluza", "Zanahoria", "Brócoli", "Aceite de oliva", "Sal"],
+    "pasos": ["Coloca el pescado y verduras en vaporera.", "Cuece 10 min.", "Aliña y sirve."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Tortitas de calabacín",
+    "imagen": "segundo-10-tortitas-calabacin.jpg",
+    "ingredientes": ["1 calabacín rallado", "1 huevo", "Avena molida", "Sal y pimienta", "Aceite de oliva"],
+    "pasos": ["Mezcla todos los ingredientes.", "Cocina en sartén vuelta y vuelta."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Pollo con verduras al wok",
+    "imagen": "segundo-11-pollo-wok.jpg",
+    "ingredientes": ["Pechuga de pollo", "Verduras variadas", "Salsa de soja", "Aceite"],
+    "pasos": ["Corta el pollo y las verduras.", "Saltea en el wok con soja."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Albóndigas de pavo al horno",
+    "imagen": "segundo-12-albondigas-pavo.jpg",
+    "ingredientes": ["Carne picada de pavo", "Avena", "Huevo", "Ajo y perejil", "Salsa de tomate"],
+    "pasos": ["Forma albóndigas y hornea.", "Sirve con salsa de tomate."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Tartar de atún y aguacate",
+    "imagen": "segundo-13-tartar-atun-aguacate.jpg",
+    "ingredientes": ["Atún fresco", "Aguacate", "Cebolla morada", "Zumo de limón", "Aceite de oliva"],
+    "pasos": ["Corta todos los ingredientes.", "Mezcla y aliña.", "Sirve fresco."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Revuelto de champiñones",
+    "imagen": "segundo-14-revuelto-champis.jpg",
+    "ingredientes": ["2 huevos", "Champiñones", "Ajo", "Aceite de oliva", "Sal y pimienta"],
+    "pasos": ["Saltea champiñones con ajo.", "Añade los huevos batidos.", "Remueve hasta cuajar."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Brochetas de pollo y verduras",
+    "imagen": "segundo-15-brochetas-pollo-verduras.jpg",
+    "ingredientes": ["Pollo en dados", "Pimiento, cebolla y calabacín", "Especias", "Aceite de oliva"],
+    "pasos": ["Ensarta en palillos los ingredientes.", "Hornea o cocina a la plancha."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Pimientos rellenos de atún",
+    "imagen": "segundo-16-pimientos-atun.jpg",
+    "ingredientes": ["Pimientos pequeños", "Atún en conserva", "Huevo cocido", "Tomate", "Aceite"],
+    "pasos": ["Rellena los pimientos con la mezcla.", "Sirve frío o gratinado."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Tortilla de calabacín",
+    "imagen": "segundo-17-tortilla-calabacin.jpg",
+    "ingredientes": ["2 huevos", "1 calabacín", "Sal", "Aceite de oliva"],
+    "pasos": ["Ralla el calabacín.", "Mezcla con huevos.", "Cocina como tortilla."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Cuscús con garbanzos y verduras",
+    "imagen": "segundo-18-cuscus-garbanzos.jpg",
+    "ingredientes": ["Cuscús cocido", "Garbanzos cocidos", "Zanahoria", "Calabacín", "Aceite y especias"],
+    "pasos": ["Saltea las verduras.", "Mezcla con cuscús y garbanzos."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Filete de ternera a la plancha",
+    "imagen": "segundo-19-ternera-plancha.jpg",
+    "ingredientes": ["1 filete de ternera", "Sal", "Pimienta", "Aceite de oliva"],
+    "pasos": ["Sazona el filete.", "Cocina a la plancha al punto deseado."]
+  },
+  {
+    "categoria": "Segundo",
+    "titulo": "Berenjenas rellenas de verduras",
+    "imagen": "segundo-20-berenjenas-rellenas.jpg",
+    "ingredientes": ["1 berenjena", "Verduras variadas", "Queso rallado light", "Aceite de oliva", "Sal"],
+    "pasos": ["Vacía la berenjena.", "Saltea con verduras.", "Rellena y gratina con queso."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Yogur con frutas y granola",
+    "imagen": "postre-01-yogur-frutas-granola.jpg",
+    "ingredientes": ["1 yogur natural", "Frutas picadas", "2 cdas. granola"],
+    "pasos": ["Coloca el yogur en un bol.", "Añade las frutas y espolvorea la granola."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Brochetas de fruta fresca",
+    "imagen": "postre-02-brochetas-fruta.jpg",
+    "ingredientes": ["Fresas", "Plátano", "Melón", "Uvas"],
+    "pasos": ["Ensarta la fruta en palillos.", "Sirve fresco."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Manzana asada con canela",
+    "imagen": "postre-03-manzana-asada-canela.jpg",
+    "ingredientes": ["1 manzana", "Canela", "Miel"],
+    "pasos": ["Corta la manzana por la mitad y retira el corazón.", "Espolvorea canela y añade un chorrito de miel.", "Hornea 20 min a 180 °C."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Flan de vainilla ligero",
+    "imagen": "postre-04-flan-vainilla.jpg",
+    "ingredientes": ["2 huevos", "250 ml leche desnatada", "1 cdita vainilla", "Edulcorante"],
+    "pasos": ["Bate huevos con leche, vainilla y edulcorante.", "Vierte en moldes y cuece al baño maría 30 min a 160 °C."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Copas de gelatina y yogur",
+    "imagen": "postre-05-gelatina-yogur.jpg",
+    "ingredientes": ["Gelatina de sabor", "Yogur natural desnatado"],
+    "pasos": ["Prepara la gelatina según instrucciones.", "Deja cuajar y cubre con yogur."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Macedonia de frutas con menta",
+    "imagen": "postre-06-macedonia-menta.jpg",
+    "ingredientes": ["Frutas variadas", "Menta picada", "Zumo de limón"],
+    "pasos": ["Corta la fruta en dados.", "Mezcla con menta y un chorrito de limón."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Bolitas de dátil y avena",
+    "imagen": "postre-07-bolitas-datil-avena.jpg",
+    "ingredientes": ["10 dátiles sin hueso", "4 cdas. copos de avena", "Cacao en polvo (opcional)"],
+    "pasos": ["Tritura todo y forma bolitas.", "Refrigera antes de servir."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Peras al horno con especias",
+    "imagen": "postre-08-peras-horno-especias.jpg",
+    "ingredientes": ["2 peras", "Canela", "Clavo", "Miel"],
+    "pasos": ["Parte las peras por la mitad y retira el corazón.", "Espolvorea especias y añade miel.", "Hornea 25 min a 180 °C."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Brownie saludable de calabaza",
+    "imagen": "postre-09-brownie-calabaza.jpg",
+    "ingredientes": ["200 g puré de calabaza", "2 huevos", "3 cdas. cacao puro", "Edulcorante"],
+    "pasos": ["Mezcla todos los ingredientes.", "Hornea 20 min a 180 °C."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Trufas de chocolate y aguacate",
+    "imagen": "postre-10-trufas-chocolate-aguacate.jpg",
+    "ingredientes": ["1 aguacate maduro", "3 cdas. cacao", "Edulcorante", "Coco rallado"],
+    "pasos": ["Tritura todos los ingredientes menos el coco.", "Forma bolitas y reboza en coco.", "Refrigera."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Gelatina de café con nata ligera",
+    "imagen": "postre-11-gelatina-cafe-nata.jpg",
+    "ingredientes": ["200 ml café fuerte", "1 sobre gelatina", "2 cdas. nata ligera"],
+    "pasos": ["Prepara gelatina con café caliente.", "Deja cuajar y añade nata encima."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Barritas de frutos secos y semillas",
+    "imagen": "postre-12-barritas-frutos-secos.jpg",
+    "ingredientes": ["Frutos secos picados", "Semillas", "Miel", "Avena"],
+    "pasos": ["Mezcla todo y presiona en molde.", "Hornea 15 min a 160 °C y corta en barritas."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Chía pudding con leche de almendra",
+    "imagen": "postre-13-chia-pudding.jpg",
+    "ingredientes": ["3 cdas. chía", "200 ml leche de almendra", "Fruta para cubrir"],
+    "pasos": ["Mezcla chía y leche y deja en nevera toda la noche.", "Sirve con fruta por encima."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Compota de manzana casera",
+    "imagen": "postre-14-compota-manzana.jpg",
+    "ingredientes": ["3 manzanas", "Canela", "Edulcorante"],
+    "pasos": ["Cuece manzanas troceadas con canela y edulcorante hasta que estén blandas.", "Tritura o deja en trozos."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Helado de plátano y fresa",
+    "imagen": "postre-15-helado-platano-fresa.jpg",
+    "ingredientes": ["2 plátanos congelados", "8 fresas congeladas"],
+    "pasos": ["Tritura ambas frutas congeladas hasta textura cremosa.", "Sirve inmediatamente."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Yogur con miel y nueces",
+    "imagen": "postre-16-yogur-miel-nueces.jpg",
+    "ingredientes": ["1 yogur griego", "1 cda. miel", "Un puñado de nueces"],
+    "pasos": ["Pon el yogur en bol.", "Añade miel y nueces."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Mousse de aguacate y limón",
+    "imagen": "postre-17-mousse-aguacate-limon.jpg",
+    "ingredientes": ["1 aguacate", "Zumo de 1 limón", "Edulcorante"],
+    "pasos": ["Tritura todo hasta textura mousse.", "Refrigera y sirve frío."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Pan de plátano saludable",
+    "imagen": "postre-18-pan-platano-saludable.jpg",
+    "ingredientes": ["2 plátanos maduros", "1 huevo", "Avena molida", "1 cdita canela", "Edulcorante"],
+    "pasos": ["Mezcla todo y hornea 25 min a 180 °C."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Peras escalfadas al vino",
+    "imagen": "postre-19-peras-vino.jpg",
+    "ingredientes": ["2 peras", "200 ml vino tinto", "Canela", "Edulcorante"],
+    "pasos": ["Cuece las peras peladas en el vino con canela y edulcorante 20 min.", "Enfría y sirve."]
+  },
+  {
+    "categoria": "Postre",
+    "titulo": "Crêpes de avena y yogur",
+    "imagen": "postre-20-crepes-avena-yogur.jpg",
+    "ingredientes": ["1 taza avena molida", "1 huevo", "150 ml leche desnatada", "Yogur para rellenar"],
+    "pasos": ["Forma una masa con avena, huevo y leche.", "Cocina crêpes finos.", "Rellena con yogur."]
   }
 ]
